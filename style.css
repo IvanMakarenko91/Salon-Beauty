@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 /* font-family: 'Roboto Slab', serif; */
 
@@ -25,6 +25,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
+  box-shadow: 0px 2px 3px black;
 }
 
 .main-head {
@@ -65,15 +66,6 @@ section {
   align-items: center;
   min-height: 100vh;
   width: 100%;
-}
-
-section h2 {
-  font-size: 4rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  opacity: 0.8;
-  color: white;
-  text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .active {
@@ -162,5 +154,130 @@ section h2 {
   }
   header .menu.responsive {
     right: 0%;
+  }
+}
+
+/* Accueil */
+
+#accueil {
+  background-color: rosybrown;
+  position: relative;
+  border-radius: 0% 50% 50% 100% / 0% 0% 50% 0% ;
+}
+
+#women {
+  height: 75vh;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+#accueil h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+  color: #6c2626;
+}
+
+#accueil p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+}
+
+#fleur {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: 25%;
+  bottom: 5%;
+}
+
+.btns {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  color: #6c2626;
+  border: 1px solid #6c2626;
+  border-radius: 50px;
+  text-decoration: none;
+  line-height: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+.btns-outline {
+  padding: 5px 10px 5px 0;
+  position: relative;
+}
+
+.btns-outline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background-color: #6b0d0d;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btns i {
+  margin-right: 2rem;
+  font-size: 2.5rem;
+  color: white;
+  z-index: 1;
+}
+
+.btns-outline:hover::before {
+  width: 100%;
+  z-index: -1;
+}
+
+.btns-outline:hover {
+  color: white;
+  z-index: 1;
+}
+
+@media (max-width:1399px) {
+  .presentation {
+    text-align: center;
+  }
+  .btns {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #women {
+    height: 45vh;
+  }
+  .presentation {
+    position: absolute;
+    top: 30%;
+  }
+}
+
+@media (max-width:800px) {
+  .women {
+    display: none;
+  }
+  .presentation p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:499px) {
+  #accueil h1 {
+    font-size: 40px;
+  }
+  .btns {
+    width: 280px;
+    padding-left: 5px;
+  }
+  .btns-outline::before {
+    width: 50px;
   }
 }
