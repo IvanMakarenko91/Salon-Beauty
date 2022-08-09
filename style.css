@@ -20,7 +20,7 @@ html {
 
 header {
   font-family: 'Pacifico', cursive;
-  padding: 30px 20px;
+  padding: 10px 20px;
   background-color: rgb(230, 230, 230);
   position: fixed;
   width: 100%;
@@ -162,7 +162,7 @@ section {
 #accueil {
   background-color: rosybrown;
   position: relative;
-  border-radius: 0% 50% 50% 100% / 0% 0% 50% 0% ;
+  border-radius: 0% 50% 0% 0% / 0% 50% 0% 0% ;
 }
 
 #women {
@@ -172,7 +172,7 @@ section {
   left: 0;
 }
 
-#accueil h1 {
+#accueil h1, #services h1 {
   font-family: 'Pacifico', cursive;
   font-size: 60px;
   color: #6c2626;
@@ -279,5 +279,74 @@ section {
   }
   .btns-outline::before {
     width: 50px;
+  }
+}
+
+
+/* Services */
+
+#services {
+  /* background-color: rgb(255, 223, 163);
+  border-radius: 0% 0% 0% 50% / 0% 0% 0% 50% ; */
+  position: relative;
+  background: url("./images/services/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#services h2 {
+  font-family: 'Roboto Slab', serif;
+}
+
+#services img {
+  height: 100px;
+  width: 100px;
+}
+
+.proposition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 20px 0px 10px 0px;
+  margin: 0px 20px 0px 20px;
+  background-color: #fffcf6;
+}
+
+.proposition:hover {
+  background-color: #ffc7c7;
+}
+
+#services p {
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #6c2626;
+  font-size: 1.3rem;
+}
+
+#services > img {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 8%;
+  right: 50px;
+  border-radius: 50%;
+}
+
+@media (max-width:991px) {
+  #services > img {
+    top: 3%;
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media (max-width:800px) {
+  #services > img {
+    display: none;
   }
 }
