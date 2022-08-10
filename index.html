@@ -18,13 +18,14 @@
     <div class="contain">
       <div class="main-head">
         <div class="toggle-menu"></div>
-        <img src="./images/logo.png" alt="">
+        <img src="./images/accueil/logo.png" alt="">
         <nav class="nav">
           <ul class="menu">
             <li class="links"><a href="#accueil">Accueil</a></li>
             <li class="links"><a href="#services">Services</a></li>
             <li class="links"><a href="#propos">À propos</a></li>
             <li class="links"><a href="#pack">Pack</a></li>
+            <li class="links"><a href="#recommandation">Avis</a></li>
             <li class="links"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -38,8 +39,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-4 women">
-          <img alt="" src="./images/accueil.png" id="women">
-          <img alt="" src="./images/fleurs.png" id="fleur">
+          <img alt="" src="./images/accueil/accueil.png" id="women">
+          <img alt="" src="./images/accueil/fleurs.png" id="fleur">
         </div>
         <div class="col-xxl-6 presentation px-5">
           <h1 class="mb-5">Votre grand jour avec classe</h1>
@@ -254,12 +255,73 @@
 
 
 
-  <section id="contact">
-    <h2>Contacts</h2>
+  <section id="recommandation">
+    <div class="image-recommandation">
+      <img alt="" src="./images/recommandation/beaute2.png">
+    </div>
+    <h1 class="mt-5">Recommandations</h1>
+    <div class="row mx-0">
+      <div class="col-12 mt-4 text-center">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+      <div class="col-12 text-center avis">
+        <p>Avis clients 4,5/5</p>
+      </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide my-5" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/recommandation/noemie.jpg" class="d-block img-fluid" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Noémie</h5>
+            <p>Suite à mon premier passage ce samedi à 15h, Je confirme les nombreux avis positifs sur ce salon. </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/recommandation/loraine.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Loraine</h5>
+            <p>À la fois professionnelles, et amusantes. Je recommande !</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/recommandation/jessica.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Jessica</h5>
+            <p>Un grand merci à Manon pour ma couleur qui est magnifique !</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/recommandation/amelie.jpg" class="d-block w-100 img-fluid" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5>Amélie</h5>
+            <p>J'ai pris le forfait gold pour une occasion, et mes proches n'en croyaient pas leur yeux !</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </section>
 
+  <section id="contact">
 
+  </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 
   <script src="./index.js"></script>
 </body>

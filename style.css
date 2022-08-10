@@ -68,7 +68,7 @@ section {
   width: 100%;
 }
 
-.active {
+.activerr {
   background-color: #cd8d098f;
 }
 
@@ -147,7 +147,7 @@ section {
   nav li a {
     padding: 0px;
   }
-  .active {
+  .activerr {
     background-color: #cd8c09;
     display: flex;
     justify-content: center;
@@ -172,7 +172,7 @@ section {
   left: 0;
 }
 
-#accueil h1, #services h1, #propos h1, #pack h1 {
+#accueil h1, #services h1, #propos h1, #pack h1, #recommandation h1 {
   font-family: 'Pacifico', cursive;
   font-size: 60px;
   color: #6c2626;
@@ -349,6 +349,12 @@ section {
   }
 }
 
+@media (max-width:499px) {
+  #services h1 {
+    font-size: 40px;
+  }
+}
+
 
 /* A propos */
 
@@ -427,6 +433,11 @@ section {
   background: linear-gradient(0.5turn, rgb(0 0 0 / 32%),90%,#f69d3c);
 }
 
+.choix:hover {
+  transform: scale(1.1);
+  background: linear-gradient(0.5turn, rgb(0 0 0 / 42%),90%,#f69d3c);
+}
+
 .silver h3 {
   color: rgb(219, 219, 219);
 }
@@ -491,5 +502,62 @@ section {
 @media (max-width:499px) {
   #pack h1 {
     font-size: 40px;
+  }
+}
+
+/* Recommandation */
+
+#recommandation {
+  display: flex;
+  flex-direction: column;
+  background: url('./images/recommandation/rose.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#recommandation .image-recommandation img {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 150px;
+  height: 150px;
+}
+
+#recommandation img {
+  height: 600px;
+  max-height: 600px;
+  width: 600px;
+  max-width: 600px;
+}
+
+#recommandation i {
+  font-size: 1.5rem;
+  color: #6b0d0d;
+}
+
+.avis p {
+  font-size: 19px;
+  font-weight: bold;
+  color: #6b0d0d;
+}
+
+@media (max-width:991px) {
+  #recommandation .image-recommandation img {
+    display: none;
+  }
+}
+
+@media (max-width:600px) {
+  #recommandation img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width:499px) {
+  #recommandation h1 {
+    font-size: 35px;
   }
 }
