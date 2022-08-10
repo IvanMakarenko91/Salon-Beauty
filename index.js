@@ -7,8 +7,8 @@ toggle_menu.addEventListener('click', () => {
   menu.classList.toggle('responsive') ;
 })
 
-// Menu class active
 
+// Menu class active
 const li = document.querySelectorAll('.links');
 const sec = document.querySelectorAll('section');
 
@@ -20,3 +20,12 @@ function activeMenu() {
 }
 activeMenu();
 window.addEventListener('scroll', activeMenu)
+
+
+// Remove responsive menu au click
+for(i = 0; i < li.length; i++) {
+  li[i].addEventListener('click', () => {
+    toggle_menu.classList.remove('activer') ;
+    menu.classList.remove('responsive');
+  })
+}
