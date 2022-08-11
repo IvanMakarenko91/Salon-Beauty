@@ -66,6 +66,7 @@ section {
   align-items: center;
   min-height: 100vh;
   width: 100%;
+  padding-top: 50px;
 }
 
 .activerr {
@@ -428,6 +429,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  position: relative;
 }
 
 .choix {
@@ -481,7 +483,7 @@ section {
   font-weight: 600;
 }
 
-#pack button {
+#pack .veux {
   width: 150px;
   padding: 8px 15px;
   border: none;
@@ -496,7 +498,7 @@ section {
   color: white;
 }
 
-#pack button:hover {
+#pack .veux:hover {
   background-color: #e7ac52;
 }
 
@@ -505,9 +507,91 @@ section {
   justify-content: center;
 }
 
+#btn-modal {
+  position: absolute;
+  top: 90px;
+  left: 60px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #921111;
+  color: white;
+  border: 1px solid white;
+  font-family: 'Roboto Slab', serif;
+  z-index: 0;
+}
+
+#staticBackdrop #sale {
+  width: 100%;
+  height: 500px;
+}
+
+#modal-body {
+  position: relative;
+}
+
+#staticBackdrop p {
+  color: white;
+}
+
+#staticBackdrop > div > div {
+  border-radius: 0;
+}
+
+#texte-modal {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#texte-modal::before {
+  position: absolute;
+  content: "";
+  height: 65px;
+  width: 65px;
+  background-color: rgba(255, 255, 255, 0.400);
+  border-radius: 50%;
+  top: -16px;
+  left: -6px;
+}
+
+#promo-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  color: white;
+  font-size: 1.3rem;
+}
+
+#promo-modal span {
+  color: rgb(255, 187, 0);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+#gerantes {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+#btn-modal:hover {
+  background-color: #6b0d0d;
+}
+
 @media (max-width:499px) {
   #pack h1 {
     font-size: 40px;
+  }
+  #btn-modal {
+    left: 20px;
   }
 }
 
@@ -735,5 +819,8 @@ footer .first:hover {
 @media (max-width:499px) {
   footer h1::before, footer h1::after {
     display: none;
+  }
+  footer h1, #contact h1 {
+    font-size: 40px;
   }
 }

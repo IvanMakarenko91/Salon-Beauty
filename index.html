@@ -24,7 +24,7 @@
             <li class="links"><a href="#accueil">Accueil</a></li>
             <li class="links"><a href="#services">Services</a></li>
             <li class="links"><a href="#propos">À propos</a></li>
-            <li class="links"><a href="#pack">Pack</a></li>
+            <li class="links"><a href="#pack">Packs</a></li>
             <li class="links"><a href="#recommandation">Avis</a></li>
             <li class="links"><a href="#contact">Contact</a></li>
           </ul>
@@ -139,9 +139,30 @@
   <!-- Pack -->
 
   <section id="pack">
+    <!-- Button trigger modal -->
+    <button type="button" id="btn-modal" class="btn sticky-bottom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Info
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Promotions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0" id="modal-body">
+            <img id="sale" alt="" src="./images/services/sale.jpg">
+            <p id="texte-modal">- 20%</p>
+            <div id="promo-modal" class="text-center"><span>Promotions</span> sur les packs "Gold" et "Diamond" durant tout le mois d'août, l'occasion de célebrer nos 5 ans !<br><br>Prenez rendez-vous !</div>
+            <img alt="" id="gerantes" src="./images/propos/vanessa.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid">
       <div class="row text-center pt-5 px-4">
-        <h1>Promotions</h1>
+        <h1>Packs</h1>
       </div>
       <div class="row px-3 py-5 text-center prestation justify-content-center">
         <p class="col-md-10 col-xl-8 col-xxl-6"><i>Nous proposons des forfaits comprenant différentes formules, pour nos clients fidèles.</i></p>
@@ -177,7 +198,7 @@
               </li>
             </ul>
             <div class="text-center">
-              <button><a href="#contact">Je le veux !</a></button>
+              <button class="veux"><a href="#contact">Je le veux !</a></button>
             </div>
           </div>
         </div>
@@ -211,7 +232,7 @@
               </li>
             </ul>
             <div class="text-center">
-              <button><a href="#contact">Je le veux !</a></button>
+              <button class="veux"><a href="#contact">Je le veux !</a></button>
             </div>
           </div>
         </div>
@@ -245,7 +266,7 @@
               </li>
             </ul>
             <div class="text-center">
-              <button><a href="#contact">Je le veux !</a></button>
+              <button class="veux"><a href="#contact">Je le veux !</a></button>
             </div>
           </div>
         </div>
