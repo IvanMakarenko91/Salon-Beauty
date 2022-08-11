@@ -44,7 +44,7 @@
         </div>
         <div class="col-xxl-6 presentation px-5">
           <h1 class="mb-5">Votre grand jour avec classe</h1>
-          <p>venez voir notre coin des mariées et profitez-en pour programmer votre rendez-vous.</p>
+          <p>Pour un moment important, ou juste pour vous, ne ratez pas une occasion !</p>
           <a href="#" class="btns btns-outline"><i class="fab fa-facebook"></i>Visitez notre groupe facebook</a>
         </div>
       </div>
@@ -349,19 +349,28 @@
         <div class="col-xl-4 mb-5">
           <div class="formulaire">
             <h2 class="text-center mb-3">Écrivez nous</h2>
-            <form>
-              <label for="firstname">Nom & prénom *</label>
+            <form id="formulaire">
+              <label for="firstname">Nom & Prénom *</label>
               <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+              <div class="invalid-feedback">
+                Veuillez saisir votre nom et prénom.
+              </div>
           
               <label for="sujet">Sujet</label>
               <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
           
               <label for="emailAddress">Email *</label>
               <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+              <div class="invalid-feedback ms-3">
+                Veuillez saisir un mail correcte.
+              </div>
           
           
-              <label for="subject">Message *</label>
-              <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="Votre message" style="height:200px"></textarea>
+              <div class="invalid-feedback">
+                Veuillez écrire votre message.
+              </div>
           
               <input type="submit" value="Envoyer">
             </form>

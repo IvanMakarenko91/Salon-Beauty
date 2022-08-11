@@ -21,7 +21,7 @@ html {
 header {
   font-family: 'Pacifico', cursive;
   padding: 10px 20px;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(227 180 180);
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -141,7 +141,7 @@ section {
     display: flex;
     justify-content: center;
     margin: 0;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(227 180 180);
     width: 100vw;
     border-radius: 0px;
   }
@@ -676,7 +676,7 @@ input[type=text], textarea, input[type=email] {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
   margin-right: 0px;
   margin-left: 0px;
   resize: vertical;
@@ -685,6 +685,7 @@ label {
   margin-right: 0px;
   margin-left: 0px;
   width: 100%;
+  margin-top: 16px;
 }
 
 input[type=submit] {
