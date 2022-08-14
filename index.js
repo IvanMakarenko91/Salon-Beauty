@@ -141,13 +141,42 @@ const image = Array.from(document.querySelectorAll(".proposition"));
 let close = document.querySelector('.popup-image span');
 let popupImg = document.querySelector('.popup-image img');
 let popup = document.querySelector('.popup-image');
+let popupParagraphe = document.querySelector('.popup-image p');
+
+let testons = [
+  {
+    message: 'Manicure : 15€ à 60€'
+  },
+  {
+    message: 'Pédicure : 12€ à 50€'
+  },
+  {
+    message: 'Maquillage : 20€ à 250€'
+  },
+  {
+    message: 'Coiffure : 36€ à 150€'
+  },
+  {
+    message: 'Coupe : 15€ à 40€'
+  },
+  {
+    message: 'Sourcils : 15€ à 50€'
+  },
+  {
+    message: 'Épilations : 8€ à 30€'
+  },
+  {
+    message: 'Soins : 40€ à 95€'
+  }
+]
 
 function test() {
   for(let l = 0; l < image.length; l++) {
     image[l].addEventListener('click', () => {
       
     popup.style.display = 'block';
-    popupImg.setAttribute('src', "./images/esthetic/es" + l + ".jpg")
+    popupImg.setAttribute('src', "./images/esthetic/es" + l + ".jpg");
+    popupParagraphe.innerText = testons[l].message
 
       close.addEventListener('click', () => {
         popup.style.display = 'none';

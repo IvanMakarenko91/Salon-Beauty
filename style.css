@@ -325,7 +325,7 @@ section {
   background-color: #ffc7c7;
 }
 
-#services p {
+#services .container p {
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -376,6 +376,20 @@ section {
   object-fit: cover;
 }
 
+.popup-image p {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  width: 750px;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Roboto Slab', serif;
+}
+
 @media (max-width:991px) {
   #services > img {
     top: 3%;
@@ -389,6 +403,9 @@ section {
     display: none;
   }
   .popup-image img {
+    width: 95%;
+  }
+  .popup-image p {
     width: 95%;
   }
 }
@@ -673,6 +690,11 @@ section {
 
 #carouselExampleCaptions > div.carousel-indicators > button.active {
   background-clip: border-box;
+}
+
+.carousel-inner p {
+  color: white;
+  font-weight: 500;
 }
 
 @media (max-width:991px) {
