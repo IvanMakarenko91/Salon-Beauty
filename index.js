@@ -134,3 +134,27 @@ function validateFields(input) {
   }
 }
 
+
+// Popup image au click
+
+const image = Array.from(document.querySelectorAll(".proposition"));
+let close = document.querySelector('.popup-image span');
+let popupImg = document.querySelector('.popup-image img');
+let popup = document.querySelector('.popup-image');
+
+function test() {
+  for(let l = 0; l < image.length; l++) {
+    image[l].addEventListener('click', () => {
+      
+    popup.style.display = 'block';
+    popupImg.setAttribute('src', "./images/esthetic/es" + l + ".jpg")
+
+      close.addEventListener('click', () => {
+        popup.style.display = 'none';
+      })
+    })
+  }
+}
+
+test();
+

@@ -298,7 +298,7 @@ section {
   font-family: 'Roboto Slab', serif;
 }
 
-#services img {
+#services .proposition img {
   height: 100px;
   width: 100px;
 }
@@ -333,13 +333,47 @@ section {
   font-size: 1.3rem;
 }
 
-#services > img {
+#services > .belle {
   position: absolute;
   height: 200px;
   width: 200px;
   top: 8%;
   right: 50px;
   border-radius: 50%;
+}
+
+.popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+}
+
+.popup-image span {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 40px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 750px;
+  height: 400px;
+  object-fit: cover;
 }
 
 @media (max-width:991px) {
@@ -353,6 +387,9 @@ section {
 @media (max-width:800px) {
   #services > img {
     display: none;
+  }
+  .popup-image img {
+    width: 95%;
   }
 }
 
@@ -552,8 +589,8 @@ section {
   width: 65px;
   background-color: rgba(255, 255, 255, 0.400);
   border-radius: 50%;
-  top: -16px;
-  left: -6px;
+  top: -20px;
+  left: -10px;
 }
 
 #promo-modal {
