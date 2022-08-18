@@ -143,7 +143,7 @@ let popupImg = document.querySelector('.popup-image img');
 let popup = document.querySelector('.popup-image');
 let popupParagraphe = document.querySelector('.popup-image p');
 
-let testons = [
+let prix = [
   {
     message: 'Manicure : 15€ à 60€'
   },
@@ -170,13 +170,13 @@ let testons = [
   }
 ]
 
-function test() {
+function prixSelect() {
   for(let l = 0; l < image.length; l++) {
     image[l].addEventListener('click', () => {
       
     popup.style.display = 'block';
     popupImg.setAttribute('src', "./images/esthetic/es" + l + ".jpg");
-    popupParagraphe.innerText = testons[l].message
+    popupParagraphe.innerText = prix[l].message
 
       close.addEventListener('click', () => {
         popup.style.display = 'none';
@@ -185,5 +185,5 @@ function test() {
   }
 }
 
-test();
+prixSelect();
 
